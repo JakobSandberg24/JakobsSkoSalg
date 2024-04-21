@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&display=swap");
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.header {
+  width: 100%;
+  max-width: 100%;
+  height: 400px;
+  background: url("../img/mangeSko.jpeg") center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header > h1 {
+  font-family: "Bad Script", cursive;
+  font-size: 50px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+
+  padding: 3px;
+  margin: 5px;
+}
+
+.header > h3 {
+  font-family: "Bad Script", cursive;
+  font-size: 20px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 3px;
+  margin: 0px;
+}
+
+.carousel-caption h5,
+.carousel-caption h6 {
+  color: white; 
+  background-color: rgba(0, 0, 0, 0.8); 
+  padding: 3px;
+  margin: 0; 
+}
+
+
+.carousel-item .carousel-image {
+  height: 400px; /* Maksimal højde */
+  object-fit: cover; /* Beskær billedet for at fylde hele containeren */
+  width: 100%; /* Sørger for at bredden tilpasses proportionalt */
+  display: block;
+}
+
+.carousel-item {
+  height: 100px; /* Sæt den ønskede højde */
+}
+
+.carousel-item img {
+  object-fit: cover; /* Beskær billedet for at fylde hele containeren */
+  object-position: center; /* Centrer indholdet i billedet */
+  width: 100%; /* Sørger for at bredden tilpasses proportionalt */
+}
+
+
+.productBox1 {
+  background: url(../img/1819497E-BEC6-4546-8B5E-4078F7C2FA5A_1_105_c.jpeg) center/cover;
+}
+
+.productBox2 {
+  background: url(../img/387FFF39-4270-4B9F-84EA-E5422A87715C_1_105_c.jpeg) center/cover;
+}
+
+.productBox3 {
+  background: url(../img/DA37FD77-BC96-418D-80B1-1EA9388EC97B_1_105_c.jpeg) center/cover;
+}
+
+.productBox4 {
+  background: url(../img/70362BEB-85ED-4B01-A536-711ECDA63901_1_105_c.jpeg) center/cover;
+}
+
+.placement {
+  width: 400px;
+  height: 300px;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 10px;
+}
+
+.product-content > h2 {
+  font-size: 26px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 5px;
+  margin: 0px;
+}
+
+.product-content > p {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 5px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.flexGrid {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .text-overlay {
+  opacity: 1;
+}
